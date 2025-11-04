@@ -6,8 +6,8 @@ function Events() {
   const [navInd, setNavInd] = useState(0);
   return (
     <>
-      <div className="con px-4 my-12 mx-4 md:mx-6">
-        <div className=" mx-6 flex flex-col items-center">
+      <div className="con md:px-4 my-12 mx-3 md:mx-6">
+        <div className=" md:mx-6 flex flex-col items-center">
           <h1 className="font-heading text-gray-900 font-bold text-3xl mb-4">
             Upcoming Events
           </h1>
@@ -506,7 +506,7 @@ function Events() {
             </>
           )}
 
-          <div className="flex flex-col items-center p-4 space-y-6 pb-8 my-8">
+          <div className="flex flex-col items-center md:p-4 space-y-6 pb-8 my-8">
             <h1 className="font-heading text-gray-900 text-3xl font-bold">
               Never Miss an Event
             </h1>

@@ -5,7 +5,7 @@ import { Clock, MapPin } from "lucide-react";
 function Contact() {
   return (
     <>
-      <div className="mx-6">
+      <div className="mx-3 md:mx-6 ">
         <div className="con p-8 mt-8 ">
           <h1 className="font-bold text-3xl text-center text-black/80">
             Get in Touch
@@ -179,7 +179,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="con p-8 mt-8 ">
+        <div className="con p-4 md:p-8 mt-8 ">
           <h1 className="font-bold text-3xl text-center text-black/80">
             Other Ways to Connect
           </h1>

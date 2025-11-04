@@ -4,8 +4,8 @@ import lead1 from "../assets/lead1.jpg";
 function Heritage() {
   return (
     <>
-      <div className="con mx-6">
-        <div className="con p-8 mt-8 ">
+      <div className="con  mx-2 md:mx-6">
+        <div className="con p-4 md:p-8 mt-8 ">
           <h1 className="font-bold text-4xl text-center text-black/80">
             About CSI Church
           </h1>
@@ -14,7 +14,7 @@ function Heritage() {
             family special.
           </p>
         </div>
-        <div className=" main p-4 grid md:grid-cols-2 gap-8">
+        <div className=" main p-2 md:p-4 grid md:grid-cols-2 gap-8">
           <div className=" md:m-4">
             <h1 className="font-bold text-3xl   text-black/80">
               The Church of South India
@@ -83,7 +83,7 @@ function Heritage() {
             />
           </div>
         </div>
-        <div className=" p-8 space-y-8">
+        <div className=" p-4 md:p-8 space-y-6">
           <h1 className="font-heading text-3xl font-bold text-gray-900 text-center">
             Our Heritage Timeline
           </h1>
@@ -91,7 +91,7 @@ function Heritage() {
             Key moments in CSI history and our local church journey
           </p>
         </div>
-        <div className="my-5 mx-6 space-y-8">
+        <div className="my-5 mx-2 md:mx-6 space-y-8">
           <div className="md:flex md:items-start md:space-x-6 space-y-5">
             <div className="">
               <button className="md:w-32 bg-green-700 px-4 py-2 rounded-xl font-bold text-white">
@@ -162,7 +162,7 @@ function Heritage() {
           </div>
         </div>
         {/* belief */}
-        <div className="mission  m-12 my-16  flex flex-col items-center space-y-5">
+        <div className="mission mx-2 md:mx-12 my-16  flex flex-col items-center space-y-5">
           <div className="flex flex-col gap-4 items-center">
             <h1 className="text-3xl font-bold text-gray-900 text-center">
               Our Core Beliefs
@@ -236,7 +236,7 @@ function Heritage() {
           </div>
         </div>
         {/* end */}
-        <div className="flex flex-col items-center p-4 space-y-6 pb-8 mb-12">
+        <div className="flex flex-col items-center p-2 md:p-4 space-y-6 pb-8 mb-12">
           <h1 className="font-heading text-gray-900 text-3xl font-bold">
             Learn More About CSI
           </h1>

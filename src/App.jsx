@@ -15,7 +15,7 @@ import Watchlive from "./components/Watchlive";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/CLI_CHURCH/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

@@ -3,8 +3,8 @@ import "../App.css";
 function Services() {
   return (
     <>
-      <div className="con px-4 my-12 mx-6">
-        <div className=" mx-6 flex flex-col items-center">
+      <div className="con md:px-4 my-12 mx-3 md:mx-6">
+        <div className=" md:mx-6 flex flex-col items-center">
           <h1 className="font-heading text-gray-900 font-bold text-3xl mb-4">
             Service Times
           </h1>
@@ -106,13 +106,13 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className=" my-14 p-12 bg-gray-200/50 rounded-2xl flex flex-col items-center">
+        <div className=" md:my-14 p-6 md:p-12 bg-gray-200/50 rounded-2xl flex flex-col items-center">
           <div>
             <h1 className="font-heading text-gray-900 font-bold text-3xl">
               What to Expect
             </h1>
           </div>
-          <div className="flex flex-col md:flex-row  gap-12 my-6 self-start">
+          <div className="flex flex-col md:flex-row  gap-6 md:gap-12 my-6 self-start">
             <div className="">
               <h2 className="font-heading text-gray-900 font-bold text-xl py-4">
                 First-Time Visitors

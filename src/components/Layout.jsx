@@ -1,7 +1,7 @@
 // new
 import React, { useEffect, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
-import { Menu, Close, ArrowDropDown } from "@mui/icons-material"; // Google icons
+import { Menu, Close, ArrowDropDown ,KeyboardArrowUp} from "@mui/icons-material"; // Google icons
 import Footer from "./Footer";
 
 const mainLinks = [
@@ -33,12 +33,29 @@ const mobileLinks = [
 function Layout() {
   const [isOpen, setIsOpen] = useState(false);
   const [showOthers, setShowOthers] = useState(false);
+  const [scrollTop,setScrollTop]=useState(false);
   const location = useLocation();
   useEffect(() => {
     setShowOthers(false);
   }, [location]);
   // setShowOthers
+useEffect(()=>{
 
+  const handleScroll= ()=> {
+    if(window.scrollY > 200){
+         setScrollTop(true)
+    }
+    else{
+      setScrollTop(false)
+    }
+  }
+  window.addEventListener("scroll",handleScroll);
+  return ()=> window.removeEventListener("scroll",handleScroll)
+},[])
+const goToTop=(e)=>{
+e.preventDefault();
+   window.scrollTo({top:0,behavior:"smooth"})
+}
   return (
     <>
       {/* Navbar */}
@@ -50,7 +67,7 @@ function Layout() {
           </span>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 font-bold text-gray-600 font-sans">
+          <div className="hidden md:flex items-center space-x-6 font-semibold text-gray-600 text-xl font-sans">
             {mainLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -69,7 +86,7 @@ function Layout() {
             <div className="relative">
               <button
                 onClick={() => setShowOthers(!showOthers)}
-                className="flex items-center justify-between w-full font-bold text-gray-700 hover:text-green-700"
+                className="flex items-center justify-between w-full font-semibold text-gray-700 hover:text-green-700"
               >
                 Others <ArrowDropDown fontSize="small" />
               </button>
@@ -150,7 +167,19 @@ function Layout() {
       <div name="top" className="pt-16">
         <Outlet />
         <Footer />
+      
+                 
       </div>
+      {
+          scrollTop && (
+            <>
+            <button onClick={goToTop}
+            className="flex  place-content-center fixed z-10  bottom-5 right-5 p-2 bg-green-700 text-white
+             rounded-full hover:shadow-xl hover:-translate-y-1 transform duration-300 cursor-pointer">
+                 <KeyboardArrowUp fontSize="medium"/></button>
+            </>
+          )
+        }
     </>
   );
 }

@@ -5,8 +5,8 @@ import Img2 from "../assets/mukan.jpg";
 function About() {
   return (
     <>
-      <div className="con p-8 mt-8 ">
-        <h1 className="font-bold text-4xl text-center text-black/80">
+      <div className="con mx-3 md:p-8 mt-8 ">
+        <h1 className="font-bold text-3xl text-center text-black/80">
           About CSI Church
         </h1>
         <p className="text-center font-semibold text-xl  text-gray-600 max-w-3xl mx-auto py-4 ">
@@ -34,21 +34,21 @@ function About() {
             </p>
           </div>
           <ul className=" text-lg text-gray-900 flex flex-col space-y-6 ">
-            <li className="flex items-center space-x-3 ">
-              <span className="font-bold   text-white w-12 h-12 bg-green-700 rounded-full flex items-center justify-center">
+            <li className="flex flex-col md:flex-row items-center  space-x-3 ">
+              <span className="font-bold text-white w-12 h-12 bg-green-700 rounded-full flex items-center justify-center">
                 75+
               </span>
-              <span className="font-semibold">
+              <span className="font-semibold text-center">
                 Years of faithful service to our community.
               </span>
             </li>
-            <li className="flex items-center space-x-3 ">
+            <li className="flex flex-col md:flex-row items-center space-x-3 ">
               <span className="font-bold  p-2  text-black w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
                 500+
               </span>
               <span className="font-semibold">Active members and growing.</span>
             </li>
-            <li className="flex items-center space-x-3 ">
+            <li className="flex flex-col md:flex-row items-center space-x-3 ">
               <span className="font-bold   text-white w-12 h-12 bg-green-700 rounded-full flex items-center justify-center">
                 12
               </span>
@@ -62,20 +62,20 @@ function About() {
           <img src={Img} alt="no img found" className="rounded-lg" />
         </div>
       </div>
-      <div className="mission  m-12  flex flex-col items-center space-y-5">
+      <div className="mission mx-3 my-8 md:mx-12 md:my-12  flex flex-col items-center space-y-5">
         <h1 className="text-3xl font-bold text-black/80">Our Mission</h1>
         <p className="text-xl md:w-3/4 font-sans font-semibold text-center leading-10 text-gray-700">
           "To create a loving, welcoming community where people can encounter
           Jesus Christ, grow in their faith, and be equipped to serve God and
           others with joy and purpose."
         </p>
-        <div className="flex flex-col md:flex-row md:w-3/4 space-x-5 space-y-5">
+        <div className="flex flex-col md:flex-row md:w-3/4 gap-5">
           <div className="text-center font-sans flex flex-col items-center space-y-4">
             <span className="font-bold text-2xl  text-white w-15 h-15 bg-green-700 rounded-full flex items-center justify-center">
               🙏
             </span>
             <h1 className="font-bold text-black/80 text-xl">Worship</h1>
-            <p className="text-gray-700  font-semibold">
+            <p className="text-gray-700  text-center font-semibold">
               Honoring God through authentic praise and prayer.
             </p>
           </div>
@@ -99,11 +99,11 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="m-8 shadow-xl p-12 bg-white rounded-lg  grid md:grid-cols-2 gap-4 items-center">
-        <div>
+      <div className="m-3 md:m-8 shadow-xl border border-gray-200/50 md:p-12 bg-white rounded-lg  grid md:grid-cols-2 gap-4 items-center">
+        <div className="px-12 py-3 ">
           <img src={Img2} alt="no img load" className="rounded-full" />
         </div>
-        <div className="space-y-5">
+        <div className="space-y-5 p-4">
           <h2 className="font-heading text-3xl font-semibold text-gray-900 leading-relaxed">
             A Welcome from Pastor David
           </h2>
@@ -130,7 +130,7 @@ function About() {
         </div>
       </div>
       <div>
-        <div className=" p-8 space-y-8">
+        <div className="px-2 py-8 md:px-8 space-y-8">
           <h1 className="font-heading text-3xl font-bold text-gray-900 text-center">
             Our Journey
           </h1>
@@ -138,7 +138,7 @@ function About() {
             Key milestones in our church's history
           </p>
         </div>
-        <div className="my-5 mx-6 space-y-8">
+        <div className="my-5 mx-3 md:mx-6 space-y-8">
           <div className="md:flex md:items-start md:space-x-6 space-y-5">
             <div className="">
               <button className="md:w-32 bg-green-700 px-4 py-2 rounded-xl font-bold text-white">

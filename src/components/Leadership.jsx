@@ -8,9 +8,9 @@ import lead6 from "../assets/lead6.jpg";
 function Leadership() {
   return (
     <>
-      <div className="mx-8">
+      <div className="mx-3 md:mx-8">
         {/* heading */}
-        <div className="con p-8 mt-8 ">
+        <div className="con p-4 md:p-8 mt-8 ">
           <h1 className="font-bold text-3xl text-center text-black/80">
             Our Leadership
           </h1>
@@ -22,8 +22,7 @@ function Leadership() {
         {/* profile cards */}
         <div className="card my-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/*  card */}
-          <div
-            className="flex flex-col gap-4 border border-gray-200/50 p-8 rounded-xl shadow-lg 
+          <div className="flex flex-col gap-4 border border-gray-200/50 p-8 rounded-xl shadow-lg 
           tansform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl
           "
           >
@@ -175,15 +174,15 @@ function Leadership() {
           </div>
         </div>
         {/* philoshopy */}
-        <div className="mission  m-12 my-16  flex flex-col items-center space-y-5">
+        <div className="mission mx-3 md:mx-12 my-16  flex flex-col items-center space-y-5">
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             Our Leadership Philosophy
           </h1>
-          <p className="text-xl md:w-3/4 font-sans font-semibold text-center leading-10 text-gray-700">
+          <p className="text-xl md:w-3/4 font-sans font-semibold text-center leading-8 md:leading-10 text-gray-700">
             We believe in servant leadership - leading by example, serving
             others, and following Christ's model of humility and love. Our
             leadership team is committed to shepherding our congregation with
-            care, wisdom, and biblical integrity.{" "}
+            care, wisdom, and biblical integrity.
           </p>
           <div className="flex flex-col md:flex-row md:w-4/5 space-x-5 space-y-5">
             <div className="text-center font-sans flex flex-col items-center space-y-4">
@@ -275,7 +274,7 @@ function Leadership() {
           </div>
         </div>
         {/* end */}
-        <div className="mission  m-12 my-16  flex flex-col items-center space-y-5">
+        <div className="mission mx-3 md:mx-12 my-12 md:my-16  flex flex-col items-center space-y-5">
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             Connect With Our Leaders
           </h1>

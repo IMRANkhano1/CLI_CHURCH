@@ -4,7 +4,7 @@ import { Baby, Heart, Users, User, Handshake } from "lucide-react";
 function Ministries() {
   return (
     <>
-      <div className="con px-4 my-12 mx-6">
+      <div className="con  md:px-4 my-12 mx-3 md:mx-6">
         <div className=" mx-6 flex flex-col items-center">
           <h1 className="font-heading text-gray-900 font-bold text-3xl mb-4">
             Our Ministries
@@ -125,7 +125,7 @@ function Ministries() {
             </button>
           </div>
         </div>
-        <div className="mission  m-12 my-16  flex flex-col items-center space-y-5">
+        <div className="mission mx-3 md:mx-12 my-16  flex flex-col items-center space-y-5">
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             Ready to Get Involved?
           </h1>

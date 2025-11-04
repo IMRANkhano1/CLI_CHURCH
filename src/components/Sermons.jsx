@@ -13,7 +13,7 @@ function Sermons() {
   return (
     <>
       {/* main div */}
-      <div className="main mx-6">
+      <div className="main mx-3 md:mx-6">
         <header className="my-12">
           <h1 className="font-heading font-bold text-3xl mb-2 text-gray-900 text-center">
             Recent Sermons
@@ -463,7 +463,7 @@ function Sermons() {
           )}
         </main>
         {/* end */}
-        <div className="flex flex-col items-center bg-gray-200/50 rounded-xl my-14 p-12">
+        <div className="flex flex-col items-center bg-gray-200/50 rounded-xl my-14 p-4 md:p-12">
           <div className="mission  flex flex-col items-center ">
             <h1 className="text-3xl font-bold text-gray-900 text-center">
               Grow in Your Faith
